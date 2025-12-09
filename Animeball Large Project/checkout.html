@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/fontawesome-free-6.5.1-web/css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* background image with 50% opacity behind page content */
+      body.checkout-bg {
+        position: relative;
+        background-color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      body.checkout-bg::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("images/checkout background image.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        z-index: -1;
+        pointer-events: none;
+      }
+
+      /* center the checkout card in the viewport (horizontally + vertically) */
+      main.checkout-main {
+        flex: 1 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      #buy-now {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+      }
+
+      /* make the checkout card smaller */
+      #buy-now .card {
+        width: 100%;
+        max-width: 420px; /* reduced size */
+        padding: 1rem;    /* smaller internal spacing */
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        border-radius: 8px;
+      }
+
+      /* reduce card typography for compactness */
+      #buy-now .card h2 { font-size: 1.25rem; margin-bottom: .5rem; }
+      #buy-now .card p  { font-size: .95rem; margin-bottom: .75rem; }
+
+      @media (max-width: 576px) {
+        #buy-now .card { max-width: 92%; padding: .75rem; }
+        #buy-now .card h2 { font-size: 1.1rem; }
+      }
+    </style>
+  </head>
+  <body class="checkout-bg">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-lg">
+          <a class="navbar-brand" href="index.html"><img src="images/Logo.png" class="type-image" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+              <li class="nav-item"><a class="nav-link" href="product-details.html">Product Details</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="checkout.html">Checkout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main class="container my-5 checkout-main">
+      <!-- KEEP ONLY proceed-to-payment section -->
+      <section id="buy-now" class="mt-5">
+        <div class="card p-4">
+          <h2 id="checkout-product-title">Checkout</h2>
+          <p id="checkout-product-desc">Select options and proceed to payment.</p>
+          <div id="checkout-product-actions" class="mt-3">
+            <button id="proceed-btn" class="btn btn-success">Proceed to Payment</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center py-4">
+      <img src="images/Logo.png" class="logo" alt="Logo">
+    </footer>
+
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+        const p = params.get('product');
+        if (!p) return;
+        const titles = {
+          '1': 'Barcelona x One Piece',
+          '2': 'Manchester City x Jujutsu Kaisen',
+          '3': 'Real Madrid x Naruto',
+          '4': 'Arsenal x Full Metal Alchemist',
+          '5': 'Chelsea x Dragon Ball',
+          '6': 'Manchester United x Pokemon',
+          '7': 'Tottenham Hotspurs x Attack on Titan',
+          '8': 'Inter Milan x Jojo Bizarre Adventure'
+        };
+        const descs = {
+          '1': 'This jersey will have you feeling the pirate spirit.',
+          '2': 'Unleash your cursed energy and let it flow!',
+          '3': 'Learn to be stealthy and deadly like a ninja.',
+          '4': 'Overcome your fears through hard work.',
+          '5': 'Defeat all who oppose you with your overwhelming strength.',
+          '6': 'I wanna be the very best like no one ever was!',
+          '7': 'Release the titan inside of you!',
+          '8': 'My stand will be the judge!'
+        };
+        const titleEl = document.getElementById('checkout-product-title');
+        const descEl = document.getElementById('checkout-product-desc');
+        if (titleEl) titleEl.textContent = titles[p] ? `Checkout — ${titles[p]}` : 'Checkout';
+        if (descEl) descEl.textContent = descs[p] || '';
+        const buySec = document.getElementById('buy-now');
+        if (buySec) buySec.scrollIntoView({ behavior: 'smooth' });
+      })();
+    </script>
+
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>

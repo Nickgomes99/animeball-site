@@ -1,0 +1,350 @@
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h5 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+#hero-font {
+    margin-top:50px;
+    text-align: center;
+}
+/* hero image reduced by 20% (80% width of its container) */
+.hero-image {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+body{
+    background-color: #000;
+    color: #ffffff00;
+}
+.carousel-control-prev{
+    color:black;
+}
+.container-fluid {
+        padding: 0;
+      
+    }
+.carousel-text{
+    float: right;
+    clear: both;
+    margin-right: 100px;
+    margin-top: auto;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:15px;
+    margin-top:15px;
+}
+
+ul{
+    list-style-type:none;
+    margin-right:40px;
+}
+.img-fluid {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#buy-now{
+    margin-top: 30px;
+}
+
+#dsc-product1 {
+    margin-top:40px;
+    text-align: left;
+}
+
+#rare-badge{
+    margin-left:auto;
+}
+#title-product-1{
+    margin-top:20px;
+}
+#button-nav{
+    padding:80px;
+}
+#footer {
+    margin-top: 30px;
+    background-color: #000;
+}
+#product-details {
+    margin-top:50px;
+}
+.breadcrumb{
+    text-align: center;
+    padding: 15px;
+}
+#social-links{
+    text-align: center;
+    padding: 15px
+}
+
+#card-sort1{
+    padding:40px;
+}
+#card-sort2{
+    padding:40px;
+}
+
+.social-links {
+    float: right;
+    position: relative;
+    left: -47%;
+    text-align: left;
+    margin-bottom: 20px;;
+}
+.social-links ul {
+    margin-top:35px;
+}
+.social-links ul li {
+    float: left;
+    margin-right: 30px;
+    list-style-type: none;
+}
+.social-links ul li:last-child {
+    margin-right: 30px;
+}
+.social-links ul .last-nav{
+    margin-right:30px;
+}
+.social-links ul li a {
+    display: inline-block;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 35px;
+}
+.social-links ul li a:hover {
+    color: blue;
+}
+
+.float-center > .child {
+    position: relative;
+    left: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+#modalbutton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+
+#artie-carousel {
+  margin-top: 3.5rem; /* adjust value to taste (rem or px) */
+}
+
+/* smaller gap on narrow screens */
+@media (max-width: 576px) {
+  #artie-carousel { margin-top: 1.5rem; }
+}
+
+#Navbar{
+    margin-bottom:20px;
+}
+.carousel-item img {
+  max-width: 100%; /* change 70% to smaller/larger as needed */
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+/* make images larger on small screens for better UX */
+@media (max-width: 992px) {
+  .carousel-item img { max-width: 90%; }
+}
+@media (max-width: 576px) {
+  .carousel-item img { max-width: 100%; }
+}
+
+/* homepage background + readable text */
+.homepage {
+  background-color: #000;
+  color: #fff;
+}
+
+/* keep page sections transparent so black shows through */
+.homepage .container-fluid,
+.homepage section,
+.homepage .row,
+.homepage .card {
+  background: transparent;
+}
+
+/* links/buttons contrast */
+.homepage a,
+.homepage .nav-link,
+.homepage .btn {
+  color: #fff;
+}
+.homepage .btn.btn-primary { color: #fff; }
+
+/* adjust navbar background if needed */
+.homepage #Navbar {
+  background: transparent !important;
+}
+
+/* Ensure all major containers use black backgrounds and white text */
+body,
+.container-fluid,
+.container,
+.container-lg,
+section,
+main,
+.row,
+.card,
+.navbar,
+#artie-carousel,
+#product-details {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Links / buttons / icons readable on black */
+a,
+.nav-link,
+.navbar .nav-link,
+.logo,
+.social-links ul li a,
+.carousel-caption,
+.card-title,
+.card-text {
+  color: #fff !important;
+}
+
+/* Keep primary button text readable (Bootstrap primary bg stays as-is) */
+.btn,
+.btn-primary {
+  color: #fff !important;
+}
+
+/* If any icons or small accents need dark fill, force white */
+.fa,
+.fas,
+.fab {
+  color: #fff !important;
+}
+
+/* Ensure all backgrounds white and text readable */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Footer */
+#footer {
+  margin-top: 30px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Homepage override */
+.homepage {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+.homepage .container-fluid,
+.homepage section,
+.homepage .row,
+.homepage .card {
+  background: #ffffff !important;
+}
+
+/* Make all main containers white by default */
+body,
+.container-fluid,
+.container,
+.container-lg,
+section,
+main,
+.row,
+.card,
+.navbar,
+#artie-carousel,
+#product-details {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Links, icons and text contrast on white */
+a,
+.nav-link,
+.navbar .nav-link,
+.logo,
+.social-links ul li a,
+.carousel-caption,
+.card-title,
+.card-text,
+.fa,
+.fas,
+.fab {
+  color: #000000 !important;
+}
+
+/* Keep primary buttons readable (Bootstrap primary background keeps its color) */
+.btn,
+.btn-primary {
+  color: #fff !important;
+}
+
+/* homepage background image at 50% opacity */
+body.homepage {
+  position: relative;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.homepage::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../images/home background image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;       /* 50% opacity */
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .hero-text-box {
+    padding: 1.5rem;
+  }
+}
+

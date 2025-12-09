@@ -1,0 +1,121 @@
+.bord {
+    border: 1px solid red;
+}
+.hero-font {
+margin-top: 100px;
+width: 175px;
+margin-left: 150px;
+}
+.hero-image {
+width:auto;
+}
+body{
+background-color:white;
+}
+.carousel-control-prev{
+color:black;
+}
+.container-fluid {
+    padding: 0;
+  
+}
+.carousel-text{
+float: right;
+clear: both;
+margin-right: 100px;
+margin-top: auto;
+}
+
+.logo {
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding:15px;
+margin-top:15px;
+}
+
+ul{
+list-style-type:none;
+margin-right:40px;
+}
+.img-fluid {
+display: block;
+margin-right: auto;
+margin-left: auto;
+}
+#buy-now{
+margin-top: 30px;
+}
+
+#dsc-product1 {
+margin-top:40px;
+text-align: left;
+}
+
+#rare-badge{
+margin-left:auto;
+}
+#title-product-1{
+margin-top:20px;
+}
+#button-nav{
+padding:80px;
+}
+#footer {
+margin-top: 30px;
+background-color: #EEEEEE;
+}
+#product-details {
+margin-top:50px;
+}
+.breadcrumb{
+text-align: center;
+margin-left:550px;
+}
+#card-sort1{
+padding:40px;
+}
+#card-sort2{
+padding:40px;
+}
+
+.social-links {
+float: right;
+position: relative;
+left: -47%;
+text-align: left;
+margin-bottom: 20px;;
+}
+.social-links ul {
+margin-top:35px;
+}
+.social-links ul li {
+float: left;
+margin-right: 30px;
+list-style-type: none;
+}
+.social-links ul li:last-child {
+margin-right: 30px;
+}
+.social-links ul .last-nav{
+margin-right:30px;
+}
+.social-links ul li a {
+display: inline-block;
+color: black;
+padding: 5px;
+border-radius: 10px;
+margin-right: 35px;
+}
+.social-links ul li a:hover {
+color: blue;
+}
+
+.float-center > .child {
+position: relative;
+left: 50%;
+}
+
+.clear {
+clear: both;
+}
