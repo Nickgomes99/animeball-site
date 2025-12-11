@@ -116,7 +116,7 @@ ul{
 }
 #product-details {
     margin-top:50px;
-    min-height: 600px;
+    min-height: 800px;
 }
 
 #product-details .col-md-6 {
@@ -128,6 +128,8 @@ ul{
     width: 100%;
     height: auto;
     max-width: 100%;
+    min-height: 600px;
+    object-fit: contain;
 }
 
 #product-details ul {
