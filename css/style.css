@@ -82,9 +82,31 @@ ul{
 #rare-badge{
     margin-left:auto;
 }
-#title-product-1{
+#title-product-1,
+#title-product-2,
+#title-product-3,
+#title-product-4,
+#title-product-5,
+#title-product-6,
+#title-product-7,
+#title-product-8{
     margin-top:20px;
+    min-height: 80px;
 }
+
+#dsc-product1,
+#dsc-product2,
+#dsc-product3,
+#dsc-product4,
+#dsc-product5,
+#dsc-product6,
+#dsc-product7,
+#dsc-product8 {
+    margin-top:40px;
+    text-align: left;
+    min-height: 50px;
+}
+
 #button-nav{
     padding:80px;
 }
@@ -94,7 +116,18 @@ ul{
 }
 #product-details {
     margin-top:50px;
+    min-height: 400px;
 }
+
+#product-details .col-md-6 {
+    display: flex;
+    align-items: center;
+}
+
+#product-details ul {
+    width: 100%;
+}
+
 .breadcrumb{
     text-align: center;
     padding: 15px;
