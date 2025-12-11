@@ -175,7 +175,7 @@ ul{
 .carousel-item img {
   max-width: 100%; /* change 70% to smaller/larger as needed */
   width: 100%;
-  height: 250px;
+  height: 200px;
   display: block;
   margin-left: auto;
   margin-right: auto;
