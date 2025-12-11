@@ -116,14 +116,12 @@ ul{
 }
 #product-details {
     margin-top:50px;
-    min-height: 1000px;
-    padding: 40px 0;
+    min-height: auto;
 }
 
 #product-details .col-md-6 {
     display: flex;
     align-items: flex-start;
-    min-height: 800px;
 }
 
 #product-details .img-fluid {
