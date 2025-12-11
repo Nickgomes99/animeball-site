@@ -95,7 +95,7 @@
           <h2 id="checkout-product-title">Checkout</h2>
           <p id="checkout-product-desc">Select options and proceed to payment.</p>
           <div id="checkout-product-actions" class="mt-3">
-            <button id="proceed-btn" class="btn btn-success">Proceed to Payment</button>
+            <a href="payment.html" id="proceed-btn" class="btn btn-success">Proceed to Payment</a>
           </div>
         </div>
       </section>
@@ -134,6 +134,13 @@
         const descEl = document.getElementById('checkout-product-desc');
         if (titleEl) titleEl.textContent = titles[p] ? `Checkout — ${titles[p]}` : 'Checkout';
         if (descEl) descEl.textContent = descs[p] || '';
+        
+        // Update proceed button to pass product parameter to payment page
+        const proceedBtn = document.getElementById('proceed-btn');
+        if (proceedBtn) {
+          proceedBtn.href = `payment.html?product=${p}`;
+        }
+        
         const buySec = document.getElementById('buy-now');
         if (buySec) buySec.scrollIntoView({ behavior: 'smooth' });
       })();
