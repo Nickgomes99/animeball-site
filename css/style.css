@@ -106,9 +106,19 @@ ul{
 
 #card-sort1{
     padding:40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 #card-sort2{
     padding:40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#card-sort1 > [class*="col-"],
+#card-sort2 > [class*="col-"] {
+    display: flex;
+    margin-bottom: 20px;
 }
 
 .social-links {
