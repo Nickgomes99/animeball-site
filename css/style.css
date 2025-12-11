@@ -396,18 +396,19 @@ body.homepage::before {
 #card-sort1 .card,
 #card-sort2 .card {
   height: 100%;
-  min-height: 650px !important;
+  min-height: 700px !important;
   display: flex;
   flex-direction: column;
+  overflow: visible !important;
 }
 
 #card-sort1 .card-img-top,
 #card-sort2 .card-img-top {
-  height: auto !important;
-  min-height: 500px !important;
+  height: 540px !important;
   max-height: none !important;
   object-fit: contain !important;
   width: 100% !important;
+  flex-shrink: 0 !important;
 }
 
 .card-body {
