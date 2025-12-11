@@ -116,12 +116,18 @@ ul{
 }
 #product-details {
     margin-top:50px;
-    min-height: 400px;
+    min-height: 600px;
 }
 
 #product-details .col-md-6 {
     display: flex;
     align-items: center;
+}
+
+#product-details .img-fluid {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 #product-details ul {
