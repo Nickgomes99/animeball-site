@@ -174,13 +174,13 @@ ul{
 }
 .carousel-item img {
   max-width: 100%; /* change 70% to smaller/larger as needed */
-  width: auto;
+  width: 100%;
   height: auto;
-  max-height: 300px; /* controls the carousel height */
+  max-height: 390px; /* controls the carousel height */
   display: block;
   margin-left: auto;
   margin-right: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* make images larger on small screens for better UX */
